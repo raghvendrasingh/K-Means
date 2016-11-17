@@ -163,7 +163,7 @@ class KMeans(numCentres: Int, maxIter: Int = 2000, eps: Double = 0.01) {
     K = numCentres
     populateIndexVectorMap(data)
     val centresPrev =  getInitialCentres(data, initialCentersChoosingMethod)
-    val centresPrevTemp = List(DenseVector(5.8,6.2),DenseVector(10.2,9.8),DenseVector(14.2,13.8))
+    //val centresPrevTemp = List(DenseVector(5.8,6.2),DenseVector(10.2,9.8),DenseVector(14.2,13.8))
     val rssPrev = updateLabelVectorIndexMap(centresPrev)
     fitTransformUtil(centresPrev, rssPrev)
   }
